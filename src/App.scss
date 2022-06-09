@@ -1,0 +1,32 @@
+.App-header {
+  height: 88px;
+
+  @media (max-width: 768px) {
+    height: 64px;
+  }
+
+  background-color: #DEE1FA;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .user {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .mock {
+    flex-grow: 0.44;
+  }
+}
