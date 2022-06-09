@@ -41,8 +41,8 @@ export const MyModal = ({ active, setActive }: any) => {
                     image
                 });
                 dispatch(pushPost(newsData));
+                setActive(false);
             }
-
         } catch (e: any) {
             console.log(e);
         }
