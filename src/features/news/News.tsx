@@ -18,7 +18,6 @@ export function News() {
   useEffect(() => {
     const fetchData = async () => {
       const { data } = await endpoints.news();
-      console.log("Посты юзера: ", data);
       dispatch(setPosts(data));
     };
     fetchData();

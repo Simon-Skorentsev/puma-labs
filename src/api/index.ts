@@ -8,7 +8,6 @@ const axiosInstace = axios.create({
 axiosInstace.interceptors.request.use(
     (config) => {
         const authToken = Cookies.get("auth-token");
-        console.log("authToken: ", authToken);
         if (config.headers && authToken) {
             config.headers.authorization = `Bearer ${authToken}`;
         }

@@ -6,7 +6,6 @@ import avatar from "./features/news/assets/monogram.svg";
 
 function App() {
   const auth = useAuth();
-  console.log("1111111", auth.userData);
   return (
     <div className="App">
       <header className="App-header">

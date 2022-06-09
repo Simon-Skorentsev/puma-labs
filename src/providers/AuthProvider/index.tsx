@@ -38,15 +38,12 @@ function AuthProvider(props: any) {
 
   const loadData = useCallback(async () => {
     const tokenData = Cookies.get("auth-token");
-    console.log("взяли из кук: ", tokenData);
     tokenData && setTokenData(tokenData);
 
     try {
       if (tokenData) {
         const rawUser = localStorage.getItem("user");
-        console.log("rawUser: ", rawUser);
         const user = rawUser && JSON.parse(rawUser);
-        console.log("not raw user: ", user);
         setUserData(user);
       }
     } catch {
